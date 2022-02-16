@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Site Turma 20 - Contato</title>
+        
+        <link href="../css/bootstrap.css" rel="stylesheet" >
+        <link rel="stylesheet" href="../css/estilos.css">
+
+                <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <img src="..\img/logo.png" style="width:394px;height:150px;" alt="Imagem da Logo">
+        <br>
+
+        <div class="menus">
+            <ul>
+                <li><a href="..\index.php">Página Inicial</a></li>
+                <li><a href="..\paginas\produtos.html">Produtos</a></li>
+                <li><a href="..\paginas\login.html">Login</a></li>
+                <li><a href="..\paginas\contato.html">Fale Conosco</a></li>
+                <li><a href="..\paginas\trabalheconosco.html">Trabalhe Conosco</a></li>
+            </ul>
+        </div>
+
+
+
+        <p>Você esta na CONTATO</p>
+
+        <p class="paragrafoprincipal">Paragrafo 1</p>
+        <p>Paragrafo 2</p>
+        <p>Paragrafo 3</p>
+
+        <!--
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2eZyhA6IzBsI3Vhdd5OQJiT9t_0WnZaZAcTiBOFE_FO9-Pg/viewform?embedded=true" width="640" height="645" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+        -->
+
+        <div class = 'formcontato'>
+            <form action="/action_page.php" >
+
+                <label for="nome">Nome:</label><br>
+                <input id = "nome" type = "text" name="nome"><br><br>
+
+                <label for="nome">Sobrenome:</label><br>
+                <input id = "sobrenome" type = "text" name="nome"><br><br>
+
+                <label for="cidade">Cidade: </label><br>
+                <input id = "cidade" type = "text" name="cidade" minlength="3" maxlength="10"><br><br>
+
+                <label for="uf">Estado: </label><br>
+                <select id="uf" name="uf">
+
+                        <option value='AC'>Acre</option>
+                        <option value='AL'>Alagoas</option>
+                        <option value='AP'>Amapá</option>
+                        <option value='AM'>Amazonas</option>
+                        <option value='BA'>Bahia</option>
+                        <option value='CE'>Ceará</option>
+                        <option value='DF'>Distrito Federal</option>
+                        <option value='ES'>Espírito Santo</option>
+                        <option value='GO'>Goiás</option>
+                        <option value='MA'>Maranhão</option>
+                        <option value='MT'>Mato Grosso</option>
+                        <option value='MS'>Mato Grosso do Sul</option>
+                        <option value='MG'>Minas Gerais</option>
+                        <option value='PA'>Pará</option>
+                        <option value='PB'>Paraíba</option>
+                        <option value='PR'>Paraná</option>
+                        <option value='PE'>Pernambuco</option>
+                        <option value='PI'>Piauí</option>
+                        <option value='RJ'>Rio de Janeiro</option>
+                        <option value='RN'>Rio Grande do Norte</option>
+                        <option value='RS'>Rio Grande do Sul</option>
+                        <option value='RO'>Rondônia</option>
+                        <option value='RR'>Roraima</option>
+                        <option value='SC'>Santa Catarina</option>
+                        <option value='SP'>São Paulo</option>
+                        <option value='SE'>Sergipe</option>
+                        <option value='TO'>Tocantins</option>
+
+                </select><br><br>
+
+                <label for="telefone">Telefone: </label><br>
+                <input id = "telefone" type = "tel" name="telefone"><br><br>
+
+                <label for="mail">Digite seu email:</label><br>
+                <input id="mail" type="text" name="mail"><br><br>
+
+
+                <label for="pesquisa">Como você chegou ao nosso site:</label><br>
+                <input id="pesquisa1" type="checkbox" name="pesquisa" value="facebook">Facebook<br>
+                <input id="pesquisa2" type="checkbox" name="pesquisa" value="whatsapp">Whastapp<br>
+                <input id="pesquisa3" type="checkbox" name="pesquisa" value="instagram">Instagram<br>
+
+
+                <label for="necessidade">Qual sua necessidade:</label><br>
+                <input id="necessidade" type="radio" name="necessidade" value="serviço">Serviço<br>
+                <input id="necessidade" type="radio" name="necessidade" value="duvida">Dúvida<br>
+                <input id="necessidade" type="radio" name="necessidade" value="compra">Compra<br>
+
+                <br>
+
+                <label for="mensagem">Digite sua texto:</label><br>
+                <textarea name="menssagem" placeholder="Comece a digitar:" rows="10" cols="30"></textarea>
+                <br>
+
+
+
+                <button type="submit">Enviar</button>
+
+
+
+            </form>
+
+        </div>
+
+
+        <a href="http://www.google.com.br" target="_blank" >Acesse o Google</a>
+
+
+        <footer>
+          <p>© 2021 Autor Leandro Rocha - Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+
+body{
+
+	background-color: black;
+
+
+}
+
+.menu li a:hover{
+
+	background-color: #444;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+	margin: 20px 0px 20px 0px;
+}
+
+/*CSS GRID LAYOUT*/
+
+.container{ 
+	max-width: 1200px /*definir uma largura maxima*/
+	margin:0 auto;
+	padding: 0px 20px 0px 20px ;
+	border: 0px solid #fff; /*começa com 1 px, depois muda para zero.*/
+
+	display: grid;/* 2 parte - aplicando o CSS grid neste momento não acontece nada, precisa dizer a estrutura linhas e colunas*/
+
+	grid-gap: 20px; /*6 parter, dar um espaço entre os itens verticalmente*/
+	grid-template-areas: /*3° parte*/
+	"sidenav item item"
+	"sidenav item item"
+	"sidenav item item"
+	"footer footer footer";
+}
+
+img{
+
+	width: 100%; /*deixar com 100% para não estourar a imagem*/
+	border-radius: 20px; /*arredondar imagens*/
+
+
+}
+
+
+.sidenav{
+
+	/*width: 300px;no item 7, trocar esta linha pelas 2 linhas abaixo*/
+	max-width: 300px;
+	min-width: 200px;
+	height: 700px;
+	background-color: #333;
+	border-radius: 20px;
+
+	grid-area: "sidenav"; /*4 parte ainda não executa a mesclagem*/
+	grid-row: sidenav; /*5 parte, dizendo para mesclar as sidenav*/
+}
+
+
+
+.item{
+
+	/*width: 300px;*/ /*no item 7, trocar esta linha pelas 2 linhas abaixo*/
+	max-width: 300px;
+	min-width: 200px;
+	height: 300px;
+	background-color: #333;
+	border-radius: 20px;
+
+	grid-area: "item"; /*4 parte*/
+}
+
+
+.footer{
+
+	width: auto; 
+	height: 300px;
+	background-color: #333;
+	border-radius: 20px;
+
+	grid-area: "footer"; /*4 parte*/
+
+	grid-column: footer; /*5 parte, dizendo para mesclar as sidenav*/
+}
+
+
+
+/*apos a etapa 6 ele esta responsivel, mas quando as imagens se aproxima, começa a aparecer a barra de rolagem*/
+/*para ajustar isto, o item 7*/
+
+/*apos o item 7, vamos fazer os itens quebrarem - inspecionar o codigo e ver a resolução - neste caso precisa usar o @media*/
+
+
+@media (max-width: 800px) { /*neste momento estou dizendo que quando chegar neste resolução, vai mudar a estrutura - copiar a tag container acima*/
+
+
+	.container{ 
+		grid-template-areas: /*3° parte*/
+		"sidenav item"
+		"sidenav item"
+		"sidenav item"
+		"sidenav item"
+		"sidenav item"
+		"sidenav item"
+		"footer footer";
+	}
+
+
+}
+
+
+@media (max-width: 500px){
+
+	.container {
+
+		grid-template-areas: 
+		"sidenav"
+		"item"
+		"item"
+		"item"
+		"item"
+		"item"
+		"footer";
+	}
+
+
+	.sidenav {
+
+	height: 200px;
+
+	}
+
+	.footer{
+
+		width: auto;
+		height: 200px;
+		background-color: #333;
+		border-radius: 20px;
+		grid-area:"footer";
+		grid-column: footer;
+
+	}	
+
+
+}

@@ -1,0 +1,42 @@
+<!--pagina inicial do site-->
+<!--desenvolvedor: Bruno Soares-->
+<!--e-mail: b.soaresmineiro@gmail.com - website: casabinaria.wordpress.com-->
+<!--pagina inicial do site-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+<!--tag style. está em arquivo separado-->
+		<link rel="stylesheet" href="style.css">
+			<meta charset="utf-8">
+			<meta name="keywords" content="HTML, CSS, Javascript">
+			<meta name="description" content="Formulario deenvio de dados do cliente">
+			<meta name="author" content="Bruno Soares - b.soaresmineiro@gmail.com">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Formaulario</title>
+	</head>
+	<body>
+<!--tag a href com li aninhado-->
+			<h3 class="grande"><strong>Fale Conosco</strong></h3>
+<br>
+<!--tag a img com definiçao de tamanho da imagem e borda-->
+			<div id="div">
+				<form method= "GET" name='formulario-contato' class='formulario-contato' action=enviarEmail.php>
+					<fieldset>
+						<legend><b>Informações de contato:</b></legend>
+						<label for="nome">Nome:&emsp;</label><br>
+							<input class='field' type="text" id="nome" name="nome"><br>
+						<label for="telefone">Telefone Celular:&emsp; </label><br>
+							<input class='field' type="tel" id="telefone" name="telefone"><br>
+						<label for="email" id="email" name="email">E-mail:&emsp;</label><br>
+							<input class='field' type="email" id="email" name="email" required="required">
+					<br><br>	
+						<textarea placeholder="Digite aqui sua mensagem" name="mensagem" rows="10" cols="60"></textarea>
+					<br><br>
+						<button type="submit">Enviar</button>&emsp;
+						<button type="reset" name="limpar" onclick="alert('Formlulario será limpo!')">Limpar</button>
+					</fieldset>
+				</form>
+			</div>
+<br>
+	</body>
+</html>
