@@ -39,6 +39,7 @@
                 <li><a href="paginas\contato.html">Fale Conosco</a></li>
                 <li><a href="paginas\trabalheconosco.html">Trabalhe Conosco</a></li>
                 <li><a href="paginas\AulaCap12_5.html">Cadastre em Nossa Newsletter</a></li>
+                <li><a href="paginas\calculotributo.html">Calculo Tributo</a></li>
             </ul>
         </div>
 
