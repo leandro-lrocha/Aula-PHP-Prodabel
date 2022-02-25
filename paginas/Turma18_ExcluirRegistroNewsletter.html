@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Site Turma 20 - Produtos</title>
+        <link rel="icon" href="https://img.icons8.com/color/48/000000/group-of-fruits.png" sizes="16x16" type="image/png">
+                
+       <link href="../css/bootstrap.css" rel="stylesheet" >
+       <link href="../css/estilos.css" rel="stylesheet" >
+       
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+
+        <img class="imglogosuperior" src="..\img/logo.png" style="width:394px;height:150px;">
+        <br>
+
+        <div class="menus">
+            <ul>
+                <li><a href="..\index.php">Página Inicial</a></li>
+                <li><a href="..\paginas\produtos.html">Produtos</a></li>
+                <li><a href="..\paginas\login.html">Login</a></li>
+                <li><a href="..\paginas\contato.html">Fale Conosco</a></li>
+                <li><a href="..\paginas\trabalheconosco.html">Trabalhe Conosco</a></li>
+                <li><a href="..\paginas\calculotributo.html">Calculo Tributo</a></li>
+                <li><a href="..\paginas\Turma18_CadastroNewsletter.html">Cadastre em Nossa Newsletter</a></li>
+                <li><a href="..\paginas\Turma18_ListagemNewsletter.php">Listagem Newsletter</a></li>
+            </ul>
+        </div>
+
+        <h2>Exclusão de Registro</h2>
+        <br>
+        <form action="/paginas/Turma18_ExcluirRegistro.php" method="POST">
+
+              <label for="IdExclusao">Digite o ID a ser excluido: </label><br>
+              <input type="text" id="IdExclusao" name="IdExclusao"><br>
+              <br>
+              
+              <input type="submit" value="Submit">
+
+            </form> 
+
+        <br>
+        <footer>
+          <p>© 2021 Autor Leandro Rocha - Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
+
+

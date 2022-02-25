@@ -16,6 +16,7 @@
   //Criando o Banco de dados
 
   $sql = "CREATE DATABASE SiteTurma18";
+  
   if ($conexao->query($sql) === TRUE) {
    echo "Banco de dados Criado com sucesso";
   } else {

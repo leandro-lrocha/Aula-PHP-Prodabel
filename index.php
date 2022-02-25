@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Site Turma 20 Prodabel - Página Inicial</title>
-        <link rel="icon" href="https://img.icons8.com/fluency/48/000000/farmer-female.png" sizes="16x16" 
+        <link rel="icon" href="https://img.icons8.com/fluency/48/000000/farmer-female.png" sizes="16x16" type="image/png">
         
 
         <link href="css/bootstrap.css" rel="stylesheet" >
@@ -28,17 +28,18 @@
          <img alt="Imagem da Logo" src="img/logo.png" style="width:100%;height:100%;" >
 
     --> 
-        <img alt="Imagem da Logo" src="img/logo.png" style="width:394px;height:150px;" >
+        <img class="imglogosuperior" alt="Imagem da Logo" src="img/logo.png" style="width:394px;height:150px;" >
         
         <br>
         <div class="menus">
             <ul>
-                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="index.php">Página Inicial</a></li>
                 <li><a href="paginas\produtos.html">Produtos</a></li>
                 <li><a href="paginas\login.html">Login</a></li>
                 <li><a href="paginas\contato.html">Fale Conosco</a></li>
                 <li><a href="paginas\trabalheconosco.html">Trabalhe Conosco</a></li>
-                <li><a href="paginas\AulaCap12_5.html">Cadastre em Nossa Newsletter</a></li>
+                <li><a href="paginas\Turma18_CadastroNewsletter.html">Cadastre em Nossa Newsletter</a></li>
+                <li><a href="paginas\Turma18_ListagemNewsletter.php">Listagem Newsletter</a></li>
                 <li><a href="paginas\calculotributo.html">Calculo Tributo</a></li>
             </ul>
         </div>

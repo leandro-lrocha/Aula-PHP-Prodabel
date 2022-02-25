@@ -20,8 +20,8 @@ $sql = "insert into contatos (nomecompleto, email, telefone)
 values ('Leandro Rocha 2', 'leandrorocha@outlook.com.br', '(31) 98888-8888')";
   */
 
-$sql = "insert into contatos (nomecompleto, email, telefone)
-values ('" . $nomecliente . "', '" . $emailcliente . "', '" . $telefonecliente . "')";
+$sql = "insert into contatos ( status, nomecompleto, email, telefone)
+values (0,'" . $nomecliente . "', '" . $emailcliente . "', '" . $telefonecliente . "')";
 
 
 
